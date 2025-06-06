@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fairycards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="study-result.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="fortune-result">
+        <section id="loading" class="centered">
+          <p>妖精がカードをひいています・・・</p>
+        </section>
+    
+        <section id="result" class="hidden fade-in">
+          <img id="result-image" src="" alt="占い結果" />
+          <h2>第一志望はこの学校でいい？</h2>
+          <p id="result-text"></p>
+        </section>
+        <a href="uranai.html?skipIntro=1" id="back-to-menu" class="back-button">占いメニューに戻る</a>
+        <div class="result-container">
+          <div id="resultText" class="result-text"></div>
+        </div>
+        
+      </main>
+    
+      <div id="footer"></div>
+      <script>
+       window.menu= 'choice'
+       </script>
+        <script src="script.js"></script>
+        <script src="study-result.js"></script>  
+        </body>
+    </html> 

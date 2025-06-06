@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'BIZ UDPゴシック', sans-serif;
+  }
+header{
+    min-height: 80px;  
+    background: linear-gradient(to bottom,
+    #e76f51 0%,
+    #f4a261 60%,
+    rgba(244, 162, 97, 0) 100%); 
+    padding:20px ;
+    text-align: center;
+}
+ 
+
+  h1{
+    font-family: 'BIZ UDPゴシック', sans-serif;
+     font-size: 28px;
+     color: #471d12;
+      margin-bottom: 15px;
+}
+.login-buttons {
+  display: flex;
+  flex-direction: column; /* 縦並び */
+  gap: 10px; /* ボタン間の隙間 */
+  align-items: center;
+  margin: 10px 0;
+}
+
+.login-buttons button {
+  font-size: 13px;
+  padding: 6px 14px;
+  width: auto;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* PCや広い画面では横並びに切り替え */
+@media (min-width: 600px) {
+  .login-buttons {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .login-buttons button {
+    width: auto;
+    font-size: 16px;
+  }
+}
+header nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around ;
+    list-style: none;
+    padding:5px;
+}
+header nav ul li a{
+    color: rgb(65, 43, 12);
+    background-color:   #fff5e6;
+    
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header nav ul li a:hover {
+    background-color: #e76f51;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 0px; /* テキストとの間に少し余白 */
+  }
+  @media screen and (max-width: 600px) {
+    header nav ul {
+      flex-wrap: wrap; /* 狭いときだけ折り返す */
+      justify-content: space-around;
+      gap:10px;
+    }
+  
+    header nav ul li a {
+      min-width: 100px; /* 折り返すときも読みやすく */
+      text-align: center;
+    }
+  }
+
+  main .hero {
+     background-image: url("images/map-haikei2.jpg");
+    background-size: contain;
+    background-position: center top 20px;
+    background-repeat: no-repeat;
+           padding-bottom: 10px; 
+    position: relative;
+  }
+  
+  main .hero figure img {
+    padding-top: 30px;     
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1; /* 背景の上に出す */
+  }
+
+ 
+main .explain{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+    font-size: 16px;
+    color: #471d12;
+    padding: 20px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+aside h2{
+    font-size: 20px;
+    text-align: center;
+    color: #471d12;
+}
+aside .contena {
+    text-align: center;
+    font-size: 15px;
+    color: #471d12;
+    padding: 10px;
+}
+
+
+footer .copyright{
+    font-size: 20px;
+    text-align:center;
+    background-color: #FFAD58;
+    color: #471d12;
+    padding: 20px;
+    display: block; 
+    visibility: visible;   
+}
+

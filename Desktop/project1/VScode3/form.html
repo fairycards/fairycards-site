@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>お問い合わせ</title>
+</head>
+<body>
+  <h1>お問い合わせ</h1>
+
+  <!-- ① フォームの中身を書き換えます（action属性やonsubmitは削除） -->
+  <form id="contact-form">
+    <label>お名前:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>メールアドレス:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>メッセージ:</label><br>
+    <textarea name="message" id="message" required></textarea><br><br>
+
+    <button type="submit">送信</button>
+  </form>
+
+  <!-- ② JavaScriptコードを<body>の一番下に追加 -->
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      const ngWords = ["死ね", "バカ", "うざい", "くそ", "ころす", "ねろ"];
+      const message = document.getElementById("message").value;
+
+      for (let word of ngWords) {
+        if (message.includes(word)) {
+          alert("不適切な言葉が含まれています。書き直してください。");
+          return;
+        }
+      }
+
+      const form = event.target;
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        message: message
+      };
+
+      try {
+        const response = await fetch("/sendEmail", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.text();
+        if (response.ok) {
+          alert("送信されました。ありがとうございました！");
+          form.reset();
+        } else {
+          alert("エラー: " + result);
+        }
+      } catch (err) {
+        alert("通信エラーが発生しました。");
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fairycards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="uranai.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+      <div id="intro">
+      <section class="fortune-main">
+      <section class="visual">
+        <img src="images/autumnfairy-insta.jpg" alt="妖精イラスト" class="fade-in">
+      </section>
+      <section class="fairy-chat  fade-in-delay1">
+            <img src="images/icon1i.png" alt="妖精アイコン" class="fairy-icon">
+            <div class="speech-bubble">
+              <p>ようこそフェアリーカードの世界へ。何を占いますか？</p>
+            </div>
+      </section>
+      </section>
+      </div>
+      <section class="fortune-main2 fade-in-delay2">
+             <div class="fortune-option">
+              <h3>🎈フェアリーカード占い</h3>
+              <p>悩み事どうなる？</p>
+              <div class="link-box">
+                <button id="show-menu">カード</button>
+              </div>
+              </div>
+
+              <div id="menu" class="hidden">
+                <p>フェアリーカード占い</p>
+                <div id="main-menu">
+                  <button class="category" data-target="worry">悩み事どうなる？</button>
+                  <button class="category" data-target="study">勉強・進路の悩み</button>
+                  <button class="category" data-target="myself">自分のこと</button>
+                  <button class="category" data-target="relationships">対人関係の悩み</button>
+                  <button class="category" data-target="love">恋愛占い</button>
+                  <button class="category"
+                  data-target="painful">学校がつらい</button>
+                </div>
+
+                <div id="worry" class="submenu hidden">
+                  <p>シンプルカード🎇悩みの行方</p>
+                  <small>困った悩みに妖精が優しく答えます</small>
+                  <a href="#">この悩みどうなる？</a>                  </div>
+
+                <div id="study" class="submenu hidden">
+                  <p>勉強・進路の悩み</p>
+                  <small>毎日勉強に取り組むあなたをフェアリーがそっと応援します</small>
+                  <a href="study-result-score.html">この間のテスト、結果は？</a>
+                  <a href="study-result-method.html">自分に合った勉強方法はある？</a>
+                  <a href="study-result-hard.html">勉強についていけない泣きそう</a>
+                  <a href="study-result-choice.html">この学校を第一志望にしていい？</a>
+                  <a href="study-result-undecide.html">進路が決められない</a>
+                </div>
+
+                <div id="myself" class="submenu hidden">
+                  <p>自分のこと</p>
+                  <small>自分が分からくなってしまったあなたへ</small>
+                  <a href="myself-result-hate.html">自分が好きになれない、嫌い</a>
+                  <a href="myself-result-style.html">何でこんな見た目に生まれてきたの？</a>
+                  <a href="myself-result-place.html">家に居場所がない</a>
+                  <a href="myself-result-course.html">私の進路これでいいの？</a>
+                  <a href="myself-result-dull.html">毎日だるすぎるんだけど</a>
+                  <a href="myself-result-livehard.html">生きるのがつらい</a>
+                  <a href="myself-result-purpose.html">なんのために生きてるの？</a>
+                  <a href="#">自分に長所ってある？</a>
+                  <a href="#">やる気がでないのはなんで？</a>
+
+                </div>
+
+                <div id="relationships" class="submenu hidden">
+                  <p>対人関係の悩み</p>
+                  <small>大丈夫？フェアリーがすぐ近くであなたをみているわ</small>
+                  <a href="relationships-result-groupline.html">知らない間にグループラインできてる？</a>
+                  <a href="relationships-result-leftout.html">仲良しグループ自分だけ仲間外れ？</a>
+                  <a href="relationships-result-notinveted.html">自分だけ誘われてないような・・気のせい？</a>
+                  <a href="relationships-result-without.html">仲良しグループ自分抜きで遊んだりしてない？</a>
+                  <a href="relationships-result-newclass.html">クラス替え、いいクラスになる？</a>
+                  <a href="relationships-result-parents.html">親と話が合わない</a>
+                  <a href="relationships-result-mypost.html">自分の投稿誰かに見られてる？</a>
+                </div>
+
+                <div id="love" class="submenu hidden">
+                  <p>恋愛占い</p>
+                  <small>恋の行方をフェアリーたちにきいてみましょう</small>
+                  <a href="love-result-feeling.html">自分のことどう思ってる？</a>
+                  <a href="love-result-fulfill.html">この恋実りますか？</a>
+                  <a href="love-result-type.html">彼の好みの女性はどんなの？</a>
+                  <a href="love-result-matuallove.html">両想いの確率は？</a>
+                  <a href="love-result-lovers.html">彼と恋人になれる？</a>
+                  <a href="love-result-couple.html">付き合ったらどんなカップルに？</a>
+                  <a href="love-result-morebeautiful.html">もっとキレイになるには？</a>
+                </div>
+              </div>
+              <div id="painful" class="submenu hidden">
+                <p>学校がつらい人へ</p>
+                <small>先が見えない？一緒に照らしてみましょう</small>
+                <a href="painful-result-truancy.html">どうして学校へ行けないんだろう</a>
+                <a href="painful-result-feelcrazy.html">周囲と同じように学校に通えない自分は変なの？</a>
+                <a href="painful-result-feelguilty.html">登校できなくて親に申し訳ない</a>
+                <a href="painful-result-myfuture.html">休みがちで勉強がさっぱり・・進学はあきらめたほうがいい？</a>
+                <a href="painful-result-bepunished.html">他の子が頑張って勉強してるときに休んでばかりいる自分。そのうちバチが当たる？</a>
+              </div>
+            
+             <div class="fortune-option">
+              <h3>妖精ミラー✨</h3>
+              <p>あなたの性格を妖精が診断しちゃう</p>
+              <div class="link-box">
+              <a href="love-fortune.html">占う</a>
+              </div>
+              </div>
+             <div class="fortune-option">
+              <h3>🙏🏻相性と守護妖精👌🏻</h3>
+              <p>大事な人との相性と守護妖精を占います。</p>
+              <div class="link-box">
+              <a href="relationship-fortune.html">妖精に尋ねる</a> 
+               </div>
+             </div>
+        </section>
+    </main>
+<div id="footer"></div>
+<script src="script.js"></script>
+<script src="uranai.js"></script>  
+</body>
+  </html>  
+ 

@@ -1,0 +1,63 @@
+.visual img {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+section.fairy-chat
+{   
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .fairy-chat {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      
+      .fairy-icon {
+        width: 80px;
+        height: auto;
+      }
+      
+      .speech-bubble {
+        background: #f0eeec;
+        border-radius: 15px;
+        padding: 15px;
+        position: relative;
+        max-width: 300px;
+        font-size: 16px;
+        line-height: 1.4;
+        box-shadow: 0 2px 5px rgba(207, 188, 188, 0.1);
+      }
+      
+      .speech-bubble::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -15px;
+        border: 10px solid transparent;
+        border-right-color: #f0f8ff;
+      }
+      .oukoku-nav ul{
+       display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around ;
+    list-style: none;
+    padding:30px;  
+      }
+      .oukoku-nav ul li a{
+    color: rgb(65, 43, 12);
+    background-color:   #d3cc92;
+    
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px 10px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }

@@ -1,0 +1,32 @@
+.hidden {
+    display: none;
+  }
+  
+  .centered {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.5rem;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .result-container {
+    display: flex;
+    justify-content: center;  /* 水平方向に中央揃え */
+    align-items: center;      /* 垂直方向に中央揃え */
+    height: 100vh;            /* ビューポートの高さに合わせる */
+  }
+  
+  .result-text {
+    text-align: center;       /* テキストを水平方向に中央揃え */
+    margin-top: 20px;          /* 上に少し余白を追加 */
+  }
+  #result-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
