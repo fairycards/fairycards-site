@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fairycards</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KH3V0CXTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4KH3V0CXTT');
+    // 一定時間（例：5秒）たってから送信する
+  setTimeout(function() {
+    gtag('config', 'G-XXXXXXX');
+  }, 3000); // 5000ミリ秒 = 5秒
+</script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="test2.css">
+</head>
+<body>
+     <div id="header"></div>
+   
+ <main>
+    <div class="card-gallery-wrapper">
+  <h2 class="card-gallery-title">オラクルカード紹介</h2><p class="notice">只今制作中、随時更新！！</p>
+<div class="card-gallery">
+
+  <!-- フレーム（葉っぱや花の飾り） -->
+  <div class="frame">
+    <!-- フレームの装飾はCSSで -->
+    
+    <!-- カードの一覧 -->
+    <div class="cards">
+      <img src="images/sou-c-web.jpg" alt="カード1" class="card" data-meaning="創　開始　作る　準備万全　幸福なスタート　創造主　科学　合成　有機物　測る　宇宙" data-title="創"/>
+      <img src="images/forkey-c-web.jpg" alt="カード2" class="card" data-meaning="4つの鍵　ヒント　扉が開く　4つの都市　風土火水　自然　節理　バランス　一部" data-title="鍵"/>
+      <img src="images/kign-c-web.jpg" alt="カード3" class="card" data-meaning="　統率力　力強さ 　王家　自信　リーダー　トップ　中心" data-title="王"/>
+      <img src="images/qeen-c-web.jpg" alt="カード4" class="card" data-meaning="　美しさ　華やか　香り　ドレス　活発　　ダリア　動く　母性　魔法のワンド" data-title="王妃"/>
+      <img src="images/shine-c-web.jpg" alt="カード4" class="card" data-meaning="　天性　才能　遺伝子　光　持ち物　無意識　魅力　見えない羽根　ヒント　身体" data-title="輝"/>
+      <img src="images/chi-c-web.jpg" alt="カード4" class="card" data-meaning="　知性　賢者　過去から学ぶ　冷静　歴史　生物　学び　経験　助言　書物" data-title="知"/>
+      <img src="images/star-c-web.jpg" alt="カード4" class="card" data-meaning="　願い　希望　遠くから自分の側へ　夜空　近々叶う　憧れ　理想　足元の星屑　夢を描く　達成" data-title="星"/>
+      <img src="images/blackwood-c-web.jpg" alt="カード4" class="card" data-meaning="レイライン　影　黒い霊道　引っ張られる　略奪　計画　陥れる　足元注意　ネガティブエネルギー　ささやき" data-title="黒い森"/>
+      <!-- 他のカードも追加 -->
+    </div>
+
+    <!-- 拡大カードと意味 -->
+    <div class="detail-area" style="display:none; flex-direction: row; align-items: flex-start;">
+      <img src="" alt="拡大カード" id="detail-image" style="width:300px; height:auto;"/>
+       <div style="margin-left:20px; display:flex; flex-direction: column;">
+       <p id="detail-title" style="font-weight:bold; font-size:1.5em; margin-bottom:10px;"></p>
+  <p id="detail-text" style="margin-top:5px;"></p>
+     </div>
+    </div>
+  </div>
+</div>
+
+ </main>
+ <aside>
+    <div class="contena">
+        <h2>お知らせ NEWS</h2>     
+        <p><br>🎇2025.6.14 英語ページを追加しました。<br><br>🎇2025.6.12 宮廷画家のミコト、妖精王国案内人の佐々木氏のSNSを更新<br><br> 🎇2025.6.11仮ページができました!公開は2025年秋の予定です。<br><br><br></p>
+     
+    <div class="info-container">
+      <!-- 左側のボックス -->
+      <div class="info-box">
+        <img src="images/icon-ekomikoto1-sns.png" alt="宮廷画家水琴絵子のアイコン" width="50" height="50">
+        <span>宮廷画家のミコト（水琴絵子）です。xとblueskyでこのサイトの絵を載せています。王国のつぶやきも・・・。妖精の紹介もしていきたいな。遊びに来てね！
+        <br><a href="https://x.com/EkkoMikito">こちら</a></span>
+      </div>
+
+      <!-- 右側のボックス -->
+      <div class="info-box">
+        <img src="images/sns1sasaki-icon.jpg" alt="案内人佐々木のアイコン" width="50" height="50">
+        <span>案内人の佐々木です。はじめまして。6月11日からブログをはじめました。国王との交渉の様子などゆっくり日誌にしていきたいと思います。よろしくお願いいたします。<br><a href="https://sasaki-yumeko.hatenablog.com">こちら</a></span>
+      </div>
+    </div>
+  </div>
+</aside>
+      
+  <div id="footer"></div>
+ <script src="test2.js"></script>
+</body>
+</html>

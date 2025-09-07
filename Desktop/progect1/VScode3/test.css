@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'BIZ UDPゴシック', sans-serif;
+  }
+header{
+    min-height: 80px;  
+    background: linear-gradient(to bottom,
+    #e76f51 0%,
+    #f4a261 60%,
+    rgba(244, 162, 97, 0) 100%); 
+    padding:20px ;
+    text-align: center;
+}
+ 
+
+  h1{
+    font-family: 'M PLUS IP','BIZ UDPゴシック', sans-serif;
+     font-size: 28px;
+     color: #471d12;
+      margin-bottom: 15px;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around ;
+    list-style: none;
+    padding:5px;
+}
+header nav ul li a{
+    color: rgb(65, 43, 12);
+    background-color:   #fff5e6;
+    
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header nav ul li a:hover {
+    background-color: #e76f51;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 0px; /* テキストとの間に少し余白 */
+  }
+  @media screen and (max-width: 600px) {
+    header nav ul {
+      flex-wrap: wrap; /* 狭いときだけ折り返す */
+      justify-content: space-around;
+      gap:10px;
+    }
+  
+    header nav ul li a {
+      min-width: 100px; /* 折り返すときも読みやすく */
+      text-align: center;
+    }
+  }
+
+
+#container {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#fairy {
+  width: 300px;
+  margin: 10px auto;
+  display: block;
+}
+@keyframes shimmerFade {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(1px, -1px) rotate(0.5deg);
+    opacity: 0.6;
+  }
+}
+
+.shimmerFade {
+  animation: shimmerFade 2s infinite ease-in-out;
+}
+
+
+.background {
+  width: 100vw;
+   max-width: 1080px;           /* 最大幅は背景画像の幅に */
+  aspect-ratio: 1080 / 600;   /* 横幅に対して高さを自動調整 */
+  
+  margin: 0 auto;              /* 横中央に配置 */
+  background-image: url('images/stroberrymoonusu.png');
+  background-size: contain;        /* 画面全体縦横比維持*/
+  background-position: center;  /* 中央を基準に表示 */
+  background-repeat: no-repeat; /* 繰り返さない */
+  position: relative;
+  display: flex;
+  justify-content: center;  /* 横中央 */
+  align-items: center;      /* 縦中央 */
+}
+
+.card-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 20px;
+}
+.card {
+  width: 80px;
+  height: 120px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 6px #aaa;
+  line-height: 120px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.card.glow {
+  box-shadow: 0 0 20px gold;
+}
+
+#message, #menu {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#result-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#result-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+
+}
+#result-area {
+  display: flex;        /* もしくはJavaScriptで付けている */
+  flex-direction: column;  /* これを追加すると縦に並びます */
+  align-items: center;  /* 横方向の中央寄せ */
+  gap: 10px;             /* 画像と文章の間に少し隙間 */
+}
+
+
+
+#result-area img {
+  max-width: 200px;
+  width: 60vw;  /* スマホでも大きく見せる */
+  height: auto;
+}
+@keyframes fadeInOnly {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+#result-image,
+#result-text {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.result-area.show #result-image {
+  animation: fadeInOnly 1.5s ease-out forwards;
+}
+
+.result-area.show #result-text {
+  animation: fadeInOnly 1.7s ease-out forwards;
+}
+
+#result-text {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 0 10px;
+}
+
+#result-image {
+  max-width: 300px;
+}
+
+#result-text {
+  font-size: 1.2em;
+  max-width: 300px;
+  text-align: center;
+}
+#return-area {
+  text-align: center;
+  margin-top: 20px;
+}
+#return-button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+aside {
+  margin-top: 200px;  /* 上に40ピクセルの余白を追加 */
+}
+aside h2{
+    font-size: 20px;
+    text-align: center;
+    color: #471d12;
+}
+aside .contena {
+   max-width: 800px;
+   margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    color: #471d12;
+    padding: 10px;
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.info-box {
+  flex: 1;
+  max-width: 400px;
+  min-height: 80px;
+  display: flex;
+   flex-direction: column; /* ←ここがポイント！縦並び */
+    justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-box img {
+  border-radius: 50%;
+}
+/* 文字列部分を左揃えにして横幅いっぱいに広げる */
+.info-box span {
+  display: block;
+  width: 100%;
+  text-align: left;
+  word-break: break-word;
+}
+
+footer .copyright{
+    font-size: 20px;
+    text-align:center;
+    background-color: #FFAD58;
+    color: #471d12;
+    padding: 20px;
+    display: block; 
+    visibility: visible;   
+}
+/* スマホ〜タブレットは今のサイズのまま */
+
+/* PC画面用（幅1024px以上） */
+@media (min-width: 1024px) {
+  .background {
+    max-width: 900px; /* PCでは少し背景を小さめにする */
+  }
+
+  .card {
+    width: 120px;    /* PCではカードを大きくする */
+    height: 180px;
+  }
+
+  #fairy {
+    width: 450px;    /* 妖精の切り抜きもPCでは拡大 */
+  }
+}
+
+

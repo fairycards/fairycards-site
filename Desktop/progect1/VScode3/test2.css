@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'BIZ UDPゴシック', sans-serif;
+  }
+header{
+    min-height: 80px;  
+    background: linear-gradient(to bottom,
+    #e76f51 0%,
+    #f4a261 60%,
+    rgba(244, 162, 97, 0) 100%); 
+    padding:20px ;
+    text-align: center;
+}
+ 
+
+  h1{
+    font-family: 'M PLUS IP','BIZ UDPゴシック', sans-serif;
+     font-size: 1.8em;
+     color: #471d12;
+      margin-bottom: 15px;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around ;
+    list-style: none;
+    padding:5px;
+}
+header nav ul li a{
+    color: rgb(65, 43, 12);
+    background-color:   #fff5e6;
+    
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header nav ul li a:hover {
+    background-color: #e76f51;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 0px; /* テキストとの間に少し余白 */
+  }
+  @media screen and (max-width: 600px) {
+    header nav ul {
+      flex-wrap: wrap; /* 狭いときだけ折り返す */
+      justify-content: space-around;
+      gap:10px;
+    }
+  
+    header nav ul li a {
+      min-width: 100px; /* 折り返すときも読みやすく */
+      text-align: center;
+    }
+  }
+  p.notice {
+  text-align: center;
+  color: #666; /* 薄いグレーなどお好みで */
+  font-size: 0.9em; /* 小さめの文字 */
+  margin-top: 10px;
+  font-style: italic; /* 斜め文字で少し雰囲気を変える */
+  padding:10px;
+}
+.card-gallery-title {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #8e5b2e;  /* オレンジ系などお好みで */
+}
+.card-gallery {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #d98b39; /* 緑がかった枠 */
+  border-radius: 20px;
+  background: #FAF0E6  ; /* 薄い緑で優しい感じ */
+  position: relative;
+}
+
+/* フレームに葉っぱや花っぽい飾りを追加（例） */
+.frame::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background-image: url('images/leaf.png'); /* 葉っぱの画像 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+.frame::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  background-image: url('images/flower.png'); /* 花の画像 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+.detail-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 2px solid #a2c4a8;
+  padding-top: 15px;
+}
+
+#detail-image {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#detail-text {
+  max-width: 400px;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.4;
+}
+aside h2{
+    font-size: 20px;
+    text-align: center;
+    color: #471d12;
+}
+aside .contena {
+   max-width: 800px;
+   margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    color: #471d12;
+    padding: 10px;
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.info-box {
+  flex: 1;
+  max-width: 400px;
+  min-height: 80px;
+  display: flex;
+   flex-direction: column; /* ←ここがポイント！縦並び */
+    justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-box img {
+  border-radius: 50%;
+}
+/* 文字列部分を左揃えにして横幅いっぱいに広げる */
+.info-box span {
+  display: block;
+  width: 100%;
+  text-align: left;
+  word-break: break-word;
+}
+
+footer .copyright{
+    font-size: 20px;
+    text-align:center;
+    background-color: #FFAD58;
+    color: #471d12;
+    padding: 20px;
+    display: block; 
+    visibility: visible;   
+}
+

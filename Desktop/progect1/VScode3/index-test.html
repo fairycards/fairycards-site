@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖精王国オラクルカード占い</title>
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+     <div id="header"></div>
+   
+ <main>
+    <div id="container">
+  <!-- 妖精の切り抜き -->
+  <img src="images/youseikieinuki.png" alt="星読み妖精" id="fairy" /></div>
+
+  <!-- 占いメニュー -->
+  <div id="menu">
+    <h2>今日はどんな1日になる？</h2>
+    <p>ＡＢＣの中からカードを1枚選んでね</p>
+  </div>
+
+  <!-- 背景＋カード -->
+<div class="background">
+  
+  <div class="card-container">
+    <img src="images/sitesample-cardura.png" alt="カード1" class="card shimmerFade" id="card1"/>
+    <img src="images/sitesample-cardura.png" alt="カード2" class="card shimmerFade" id="card2" />
+    <img src="images/sitesample-cardura.png" alt="カード3" class="card shimmerFade" id="card3" />
+  </div>
+
+  <div id="result-area" class="result-area" style="display:none; margin-top:20px;">
+    <img id="result-image" src="" alt="選ばれたカード" style="max-width:300px;"/>
+    <div id="result-text" style="font-size:1.2em; margin-top:10px;"></div>
+    <div id="return-area" style="display:none; text-align:center; margin-top:20px;">
+      <a href="index.html" id="return-button" style="
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  ">
+    戻る
+  </a>
+</div>
+    </div>
+  </div>
+</div> <!-- backgroundの閉じタグ -->
+ 
+  
+  <!-- メッセージ -->
+  <div id="message">カードを押してね</div>
+
+  <!-- 結果ボタン -->
+  <div id="result-buttons" style="display:none;">
+    <button data-card="1">Ａ</button>
+    <button data-card="2">Ｂ</button>
+    <button data-card="3">Ｃ</button>
+  </div>
+
+
+</main>
+ <aside>
+    <div class="contena">
+        <h2>お知らせ NEWS</h2>     
+        <p><br>🎇2025.6.14 英語ページを追加しました。<br><br>🎇2025.6.12 宮廷画家のミコト、妖精王国案内人の佐々木氏のSNSを更新<br><br> 🎇2025.6.11仮ページができました!公開は2025年秋の予定です。<br><br><br></p>
+     
+    <div class="info-container">
+      <!-- 左側のボックス -->
+      <div class="info-box">
+        <img src="images/icon-ekomikoto1-sns.png" alt="宮廷画家水琴絵子のアイコン" width="50" height="50">
+        <span>宮廷画家のミコト（水琴絵子）です。xとblueskyでこのサイトの絵を載せています。王国のつぶやきも・・・。妖精の紹介もしていきたいな。遊びに来てね！
+        <br><a href="https://x.com/EkkoMikito">こちら</a></span>
+      </div>
+
+      <!-- 右側のボックス -->
+      <div class="info-box">
+        <img src="images/sns1sasaki-icon.jpg" alt="案内人佐々木のアイコン" width="50" height="50">
+        <span>案内人の佐々木です。はじめまして。6月11日からブログをはじめました。国王との交渉の様子などゆっくり日誌にしていきたいと思います。よろしくお願いいたします。<br><a href="https://sasaki-yumeko.hatenablog.com">こちら</a></span>
+      </div>
+    </div>
+  </div>
+</aside>
+      
+  <div id="footer"></div>
+ <script src="test.js"></script>
+</body>
+</html>

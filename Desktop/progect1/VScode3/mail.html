@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fairycards</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4KH3V0CXTT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4KH3V0CXTT');
+      // 一定時間（例：5秒）たってから送信する
+  setTimeout(function() {
+    gtag('config', 'G-XXXXXXX');
+  }, 3000); // 5000ミリ秒 = 5秒
+</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mail.css">
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <h2>お問い合わせ</h2>
+          <!-- ▼ ここが Google フォームの埋め込み部分 ▼ -->
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSc_u49Ty2cbSXv79YljuOWKvsoy2K2_5zzV-WDnn7yfmBkVrQ/viewform?embedded=true"
+      width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">
+      読み込んでいます…
+    </iframe>
+    <!-- ▲ 埋め込みここまで ▲ -->
+      </main>
+      
+  <div id="footer"></div>
+  <script src="script.js"></script>
+    </body>
+    </html>     

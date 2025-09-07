@@ -1,0 +1,200 @@
+section.visual img {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+.fade-in {
+  opacity: 1;
+  transform: translateY(30px);
+  animation: fadeInUp 9.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-delay1 {
+  opacity: 0;
+  transform: translateY(20px);
+  
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 4.5s;
+}
+
+.fade-in-delay2 {
+  opacity: 0;
+  transform: translateY(20px);
+  
+  animation: fadeInUp 1s ease forwards;
+  animation-delay:5s;
+}
+.fade-in {
+  opacity: 1;
+  transform: translateY(30px);
+  animation: fadeInUp 9.5s ease-out forwards;
+}
+
+.fade-in-delay1 {
+  opacity: 0;
+  transform: translateY(20px);
+  
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 4.5s;
+}
+
+.fade-in-delay2 {
+  opacity: 0;
+  transform: translateY(20px);
+  
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 5s;
+}
+
+/* アニメーションを無効化するためのスタイル */
+.fade-in.skip, 
+.fade-in-delay1.skip,
+.fade-in-delay2.skip {
+  animation: none !important; /* アニメーションを無効化 */
+  opacity: 1 !important; /* 即座に表示 */
+  transform: translateY(0) !important; /* 即座に位置を戻す */
+}
+section.fairy-chat
+{
+   
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .fairy-chat {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      
+      .fairy-icon {
+        width: 80px;
+        height: auto;
+      }
+      
+      .speech-bubble {
+        background: #f0eeec;
+        border-radius: 15px;
+        padding: 15px;
+        position: relative;
+        max-width: 300px;
+        font-size: 16px;
+        line-height: 1.4;
+        box-shadow: 0 2px 5px rgba(207, 188, 188, 0.1);
+      }
+      
+      .speech-bubble::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -15px;
+        border: 10px solid transparent;
+        border-right-color: #f0f8ff;
+      }
+         
+
+h2{
+    font-size: 40px;
+    color: brown;
+    text-align: center;
+}
+p{
+ font-size: 15px;
+ color: brown;
+ text-align: center; 
+ 
+}
+h3{
+    font-size: 10px;
+    text-align: center;
+}
+.link-box {
+    text-align: center;
+  }
+  
+  .link-box a {
+    display: inline-block; 
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+#menu {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   width: 80%; /* ← 追加！ */
+  max-width: 500px; /* 必要に応じて最大幅も追加可能 */
+}
+#menu.show {
+  display: block;
+}
+
+.submenu {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #fffaf0;
+  border: 1px solid #ffd9b3;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#main-menu button {
+  margin: 0.5em;
+  padding: 0.6em 1em;
+  border: none;
+  background: #fbd0d9;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#worry a {
+   display: block;
+   margin-bottom: 12px;
+}
+#study a {
+  display: block;
+  margin-bottom: 10px; /* 任意でリンクの間隔を調整 */
+}
+#myself a {
+   display: block;
+   margin-bottom: 12px;
+}
+#relationships a {
+  display: block;
+  margin-bottom: 12px;
+}
+#love a {
+  display: block;
+  margin-bottom: 10px; /* 任意でリンクの間隔を調整 */
+}
+#painful a {
+  display: block;
+  margin-bottom: 12px;
+}
