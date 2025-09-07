@@ -2,6 +2,10 @@ name: Firebase Hosting Deploy
 
 # スケジュールで実行
 on:
+
+  push:
+    branches:
+      - main        # main ブランチに push されたときに実行
   schedule:
     - cron: '*/5 * * * *' # 日本時間 10:30 → UTC 1:30、9月7日に実行
   workflow_dispatch: # 手動でも実行可能
@@ -9,7 +13,6 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -17,7 +20,7 @@ jobs:
         # ← ここに追加
       - name: Copy today's folder
         run: |
-          rsync -a content/2025-9-7/ ./
+          rsync -a content/2025-9-7/ ./VScode3/
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
